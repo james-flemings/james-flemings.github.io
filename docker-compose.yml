@@ -5,6 +5,7 @@ services:
     image: amirpourmand/al-folio:latest
     platform: linux/amd64
     build: .
+    command: /bin/bash /srv/jekyll/bin/entry_point.sh
     ports:
       - 8080:8080
       - 35729:35729
